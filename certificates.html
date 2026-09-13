@@ -1,59 +1,458 @@
-<section>
+<!DOCTYPE html>
+<html lang="th">
 
-    <div class="section-heading">
+<head>
 
-        <div class="eyebrow">
-            MY ACHIEVEMENTS
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Certificates and achievements of Kanyanat Tonok">
+
+    <title>
+        Certificates | Kanyanat Tonok
+    </title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVIGATION BAR
+========================================= -->
+
+<nav class="navbar">
+
+    <a href="index.html"
+       class="logo">
+
+        KANYANAT<span>.</span>
+
+    </a>
+
+
+    <div class="nav-menu">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About Me
+        </a>
+
+        <a href="portfolio.html">
+            Portfolio
+        </a>
+
+        <a class="active"
+           href="certificates.html">
+
+            Certificates
+
+        </a>
+
+        <a href="future.html">
+            My Future
+        </a>
+
+    </div>
+
+
+    <button
+        class="menu-button"
+        aria-label="Open navigation menu">
+
+        ☰
+
+    </button>
+
+</nav>
+
+
+
+<!-- =========================================
+     MAIN CONTENT
+========================================= -->
+
+<main class="page-container">
+
+
+    <!-- =====================================
+         CERTIFICATES HEADER
+    ====================================== -->
+
+    <section>
+
+
+        <div class="section-heading center">
+
+
+            <div class="eyebrow">
+
+                MY ACHIEVEMENTS
+
+            </div>
+
+
+            <h1>
+
+                Certificates
+
+            </h1>
+
+
+            <p>
+
+                พื้นที่รวบรวมเกียรติบัตร
+                การแข่งขัน การอบรม
+                Workshop และกิจกรรมต่าง ๆ
+                ที่ฉันได้เข้าร่วม
+
+                <br><br>
+
+                แต่ละกิจกรรมเป็นส่วนหนึ่ง
+                ของประสบการณ์ที่ช่วยให้ฉัน
+                ได้เรียนรู้สิ่งใหม่
+                พัฒนาทักษะ และค้นพบ
+                ความสนใจของตัวเองมากขึ้น
+
+            </p>
+
+
         </div>
 
-        <h1>
-            Certificates
-        </h1>
+
+
+        <!-- =================================
+             FILTER BUTTONS
+        ================================== -->
+
+        <div class="certificate-filter">
+
+
+            <button
+                class="filter-btn active"
+                data-filter="all">
+
+                All
+
+            </button>
+
+
+
+            <button
+                class="filter-btn"
+                data-filter="dentistry">
+
+                🦷 Dentistry
+
+            </button>
+
+
+
+            <button
+                class="filter-btn"
+                data-filter="technology">
+
+                💻 Technology
+
+            </button>
+
+
+
+            <button
+                class="filter-btn"
+                data-filter="competition">
+
+                🏆 Competition
+
+            </button>
+
+
+
+            <button
+                class="filter-btn"
+                data-filter="academic">
+
+                📚 Academic
+
+            </button>
+
+
+
+            <button
+                class="filter-btn"
+                data-filter="training">
+
+                🎓 Training
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =================================
+             CERTIFICATE GRID
+             
+             certificates.js
+             จะสร้าง Card ให้อัตโนมัติ
+        ================================== -->
+
+        <div
+            class="certificate-grid"
+            id="certificateGrid">
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         CERTIFICATE JOURNEY
+    ====================================== -->
+
+    <section class="home-mini-about">
+
+
+        <div class="section-heading center">
+
+
+            <div class="eyebrow">
+
+                LEARNING JOURNEY
+
+            </div>
+
+
+            <h2>
+
+                More Than Certificates
+
+            </h2>
+
+
+            <p>
+
+                สำหรับฉัน
+                เกียรติบัตรไม่ได้เป็นเพียงเอกสาร
+                ที่บอกว่าเคยเข้าร่วมกิจกรรม
+
+                แต่เป็นหลักฐานของประสบการณ์
+                การเรียนรู้ และสิ่งใหม่ ๆ
+                ที่ฉันได้ลองทำ
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="mini-about-grid">
+
+
+            <!-- EXPERIENCE -->
+
+            <div class="mini-card">
+
+
+                <div class="icon">
+
+                    ✨
+
+                </div>
+
+
+                <h3>
+
+                    Experience
+
+                </h3>
+
+
+                <p>
+
+                    ทุกกิจกรรมทำให้ฉัน
+                    ได้พบกับประสบการณ์
+                    และสภาพแวดล้อมใหม่ ๆ
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- KNOWLEDGE -->
+
+            <div class="mini-card">
+
+
+                <div class="icon">
+
+                    📚
+
+                </div>
+
+
+                <h3>
+
+                    Knowledge
+
+                </h3>
+
+
+                <p>
+
+                    การอบรมและ Workshop
+                    ช่วยให้ฉันได้เรียนรู้
+                    สิ่งที่นอกเหนือจากห้องเรียน
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- GROWTH -->
+
+            <div class="mini-card">
+
+
+                <div class="icon">
+
+                    🌱
+
+                </div>
+
+
+                <h3>
+
+                    Growth
+
+                </h3>
+
+
+                <p>
+
+                    ทุกความท้าทาย
+                    คือโอกาสที่ทำให้ฉัน
+                    ได้พัฒนาตัวเองขึ้นอีกขั้น
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         QUOTE
+    ====================================== -->
+
+    <section class="quote-section">
+
+
+        <h2>
+
+            “Every experience becomes
+            a part of who I am becoming.”
+
+        </h2>
+
 
         <p>
-            รวบรวมเกียรติบัตร การแข่งขัน การอบรม
-            และกิจกรรมที่ฉันได้เข้าร่วม
+
+            Learn • Explore • Challenge • Grow
+
         </p>
 
-    </div>
+
+    </section>
 
 
-    <!-- FILTER -->
-
-    <div class="certificate-filter">
-
-        <button class="filter-btn active" data-filter="all">
-            All
-        </button>
-
-        <button class="filter-btn" data-filter="dentistry">
-            Dentistry
-        </button>
-
-        <button class="filter-btn" data-filter="technology">
-            Technology
-        </button>
-
-        <button class="filter-btn" data-filter="competition">
-            Competition
-        </button>
-
-        <button class="filter-btn" data-filter="academic">
-            Academic
-        </button>
-
-        <button class="filter-btn" data-filter="training">
-            Training
-        </button>
-
-    </div>
+</main>
 
 
-    <!-- JavaScript จะสร้าง Card ให้อัตโนมัติ -->
 
-    <div
-        class="certificate-grid"
-        id="certificateGrid">
-    </div>
+<!-- =========================================
+     FOOTER
+========================================= -->
 
-</section>
+<footer>
+
+
+    <strong>
+
+        Kanyanat Tonok
+
+    </strong>
+
+
+    <br>
+
+
+    Certificates & Achievements
+
+
+    <br><br>
+
+
+    <span>
+
+        © 2026 Personal Portfolio
+
+    </span>
+
+
+</footer>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<!--
+script.js
+ใช้สำหรับ:
+- เมนูมือถือ
+- คำนวณอายุ
+-->
+
+<script src="script.js"></script>
+
+
+<!--
+certificates.js
+ใช้สำหรับ:
+- สร้าง Certificate Card
+- ข้อมูลเกียรติบัตร
+- Filter หมวดหมู่
+-->
+
+<script src="certificates.js"></script>
+
+
+</body>
+
+</html>
