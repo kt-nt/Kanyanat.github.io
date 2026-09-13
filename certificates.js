@@ -1,15 +1,10 @@
 /* =========================================================
    KANYANAT TONOK
-   CERTIFICATES DATABASE
+   CERTIFICATE DATABASE
 ========================================================= */
-
 
 const certificates = [
 
-
-    /* =====================================================
-       DENTISTRY
-    ===================================================== */
 
     {
         title:
@@ -31,11 +26,6 @@ const certificates = [
             null
     },
 
-
-
-    /* =====================================================
-       TECHNOLOGY
-    ===================================================== */
 
     {
         title:
@@ -121,11 +111,6 @@ const certificates = [
     },
 
 
-
-    /* =====================================================
-       COMPETITION
-    ===================================================== */
-
     {
         title:
             "กิจกรรมวีดิทัศน์ — แต่งคำประพันธ์โดยใช้ AI",
@@ -167,11 +152,6 @@ const certificates = [
             null
     },
 
-
-
-    /* =====================================================
-       ACADEMIC
-    ===================================================== */
 
     {
         title:
@@ -215,11 +195,6 @@ const certificates = [
     },
 
 
-
-    /* =====================================================
-       TRAINING
-    ===================================================== */
-
     {
         title:
             "โครงการส่งเสริมการเรียนรู้หน้าที่พลเมืองดิจิทัล หลักสูตรอุ่นใจไซเบอร์",
@@ -245,20 +220,14 @@ const certificates = [
 
 
 /* =========================================================
-   GET CERTIFICATE GRID
+   CERTIFICATE GRID
 ========================================================= */
 
 const certificateGrid =
     document.getElementById("certificateGrid");
 
 
-
-/* =========================================================
-   RENDER CERTIFICATES
-========================================================= */
-
 function renderCertificates(filter = "all") {
-
 
     if (!certificateGrid) {
         return;
@@ -272,16 +241,15 @@ function renderCertificates(filter = "all") {
         certificates.filter(cert => {
 
             return (
-                filter === "all" ||
+                filter === "all"
+                ||
                 cert.category === filter
             );
 
         });
 
 
-
     filteredCertificates.forEach(cert => {
-
 
         const card =
             document.createElement("article");
@@ -290,11 +258,6 @@ function renderCertificates(filter = "all") {
         card.className =
             "certificate-card";
 
-
-
-        /* ================================================
-           PDF BUTTON
-        ================================================= */
 
         let pdfButton = "";
 
@@ -318,13 +281,7 @@ function renderCertificates(filter = "all") {
         }
 
 
-
-        /* ================================================
-           CERTIFICATE CARD
-        ================================================= */
-
         card.innerHTML = `
-
 
             <a
                 href="${cert.image}"
@@ -340,7 +297,6 @@ function renderCertificates(filter = "all") {
             </a>
 
 
-
             <div class="certificate-info">
 
 
@@ -351,13 +307,11 @@ function renderCertificates(filter = "all") {
                 </span>
 
 
-
                 <h3>
 
                     ${cert.title}
 
                 </h3>
-
 
 
                 <p>
@@ -367,13 +321,11 @@ function renderCertificates(filter = "all") {
                 </p>
 
 
-
                 <div class="cert-date">
 
                     ${cert.date}
 
                 </div>
-
 
 
                 <div class="cert-buttons">
@@ -398,7 +350,6 @@ function renderCertificates(filter = "all") {
 
             </div>
 
-
         `;
 
 
@@ -409,17 +360,12 @@ function renderCertificates(filter = "all") {
 }
 
 
-
-/* =========================================================
-   INITIAL DISPLAY
-========================================================= */
-
 renderCertificates("all");
 
 
 
 /* =========================================================
-   FILTER BUTTONS
+   FILTER
 ========================================================= */
 
 const filterButtons =
@@ -428,11 +374,7 @@ const filterButtons =
 
 filterButtons.forEach(button => {
 
-
     button.addEventListener("click", () => {
-
-
-        /* REMOVE ACTIVE */
 
         filterButtons.forEach(btn => {
 
@@ -441,21 +383,14 @@ filterButtons.forEach(button => {
         });
 
 
-        /* ACTIVE CURRENT BUTTON */
-
         button.classList.add("active");
 
-
-        /* GET CATEGORY */
 
         const filter =
             button.dataset.filter;
 
 
-        /* DISPLAY */
-
         renderCertificates(filter);
-
 
     });
 
