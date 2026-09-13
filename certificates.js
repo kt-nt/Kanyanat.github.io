@@ -109,7 +109,7 @@ const certificates = [
         category: "competition",
 
         image:
-            "assets/certificates/images/ai-poetry-2569.png",
+            "assets/certificates/images/ai-poetry-2569.jpg",
 
         pdf: null
     },
@@ -127,7 +127,7 @@ const certificates = [
         category: "competition",
 
         image:
-            "assets/certificates/images/fast-calculation-2569.jpg",
+            "assets/certificates/images/fast-calculation-2569.png",
 
         pdf: null
     },
