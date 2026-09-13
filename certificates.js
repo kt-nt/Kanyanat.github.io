@@ -5,7 +5,6 @@
 
 const certificates = [
 
-
     {
         title:
             "กิจกรรมแนะแนวการศึกษาและอาชีพด้านทันตกรรม",
@@ -20,7 +19,7 @@ const certificates = [
             "dentistry",
 
         image:
-            "./assets/certificates/images/dentistry-guidance-2569.jpg.jpg",
+            "./assets/certificates/images/dentistry-guidance-2569.jpg",
 
         pdf:
             null
@@ -41,7 +40,7 @@ const certificates = [
             "technology",
 
         image:
-            "./assets/certificates/images/kmitl-ai-cyber-2569.png.png",
+            "./assets/certificates/images/kmitl-ai-cyber-2569.png",
 
         pdf:
             null
@@ -62,7 +61,7 @@ const certificates = [
             "technology",
 
         image:
-            "./assets/certificates/images/kmitl-plc-2569.png.png",
+            "./assets/certificates/images/kmitl-plc-2569.png",
 
         pdf:
             null
@@ -83,7 +82,7 @@ const certificates = [
             "technology",
 
         image:
-            "./assets/certificates/images/automation-park-robot-2025.jpg.jpg",
+            "./assets/certificates/images/automation-park-robot-2025.jpg",
 
         pdf:
             null
@@ -104,7 +103,7 @@ const certificates = [
             "technology",
 
         image:
-            "./assets/certificates/images/smart-safe-digital-2569.jpg.jpg",
+            "./assets/certificates/images/smart-safe-digital-2569.jpg",
 
         pdf:
             null
@@ -125,7 +124,7 @@ const certificates = [
             "competition",
 
         image:
-            "./assets/certificates/images/ai-poetry-2569.png.jpg",
+            "./assets/certificates/images/ai-poetry-2569.jpg",
 
         pdf:
             null
@@ -146,7 +145,7 @@ const certificates = [
             "competition",
 
         image:
-            "./assets/certificates/images/fast-calculation-2569.jpg.png",
+            "./assets/certificates/images/fast-calculation-2569.png",
 
         pdf:
             null
@@ -167,7 +166,7 @@ const certificates = [
             "academic",
 
         image:
-            "./assets/certificates/images/sudoku-2569.jpg.jpg",
+            "./assets/certificates/images/sudoku-2569.jpg",
 
         pdf:
             null
@@ -188,7 +187,7 @@ const certificates = [
             "academic",
 
         image:
-            "./assets/certificates/images/anti-corruption-2568.jpg.jpg",
+            "./assets/certificates/images/anti-corruption-2568.jpg",
 
         pdf:
             null
@@ -209,14 +208,13 @@ const certificates = [
             "training",
 
         image:
-            "./assets/certificates/images/cyber-citizen-2568.jpg.jpg",
+            "./assets/certificates/images/cyber-citizen-2568.jpg",
 
         pdf:
             null
     }
 
 ];
-
 
 
 /* =========================================================
@@ -232,7 +230,6 @@ function renderCertificates(filter = "all") {
     if (!certificateGrid) {
         return;
     }
-
 
     certificateGrid.innerHTML = "";
 
@@ -253,7 +250,6 @@ function renderCertificates(filter = "all") {
 
         const card =
             document.createElement("article");
-
 
         card.className =
             "certificate-card";
@@ -299,37 +295,23 @@ function renderCertificates(filter = "all") {
 
             <div class="certificate-info">
 
-
                 <span class="cert-category">
-
                     ${cert.category}
-
                 </span>
 
-
                 <h3>
-
                     ${cert.title}
-
                 </h3>
 
-
                 <p>
-
                     ${cert.organization}
-
                 </p>
 
-
                 <div class="cert-date">
-
                     ${cert.date}
-
                 </div>
 
-
                 <div class="cert-buttons">
-
 
                     <a
                         class="cert-button"
@@ -341,12 +323,9 @@ function renderCertificates(filter = "all") {
 
                     </a>
 
-
                     ${pdfButton}
 
-
                 </div>
-
 
             </div>
 
@@ -363,9 +342,8 @@ function renderCertificates(filter = "all") {
 renderCertificates("all");
 
 
-
 /* =========================================================
-   FILTER
+   FILTER BUTTONS
 ========================================================= */
 
 const filterButtons =
@@ -377,18 +355,13 @@ filterButtons.forEach(button => {
     button.addEventListener("click", () => {
 
         filterButtons.forEach(btn => {
-
             btn.classList.remove("active");
-
         });
-
 
         button.classList.add("active");
 
-
         const filter =
             button.dataset.filter;
-
 
         renderCertificates(filter);
 
