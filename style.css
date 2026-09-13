@@ -1,57 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  backgroung-color: #f4f4f4;
-  color: #333
+    font-family: Arial, sans-serif;
+    background: #080b12;
+    color: white;
 }
 
-header {
-  background: #4CAF50;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+nav {
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 8%;
+
+    border-bottom: 1px solid #222;
 }
 
-hearder h1 {
-  margin: 0;
+.logo {
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
-header p {
-  margin: 5px 0 0;
+.menu {
+    display: flex;
+    gap: 30px;
 }
 
-section {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  backgound: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.menu a {
+    color: white;
+    text-decoration: none;
 }
 
-h2 {
-  color: #4CAF50;
+.hero {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 10%;
 }
 
-.project {
-  margin-bottom: 20px;
-}
-.project h3 {
-  margin: 0 0 10px;
-  color: #333;
+.small-title {
+    letter-spacing: 4px;
+    color: #999;
 }
 
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+.hero h1 {
+    font-size: 70px;
+    margin: 20px 0;
 }
 
-footer {
-  text-align: center;
-  padding: 10px 0;
-  backgound: #333;
-  color: white;
-  margin-top: 20px;
+.hero h1 span {
+    color: #70a5ff;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #aaa;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.button,
+.button-outline {
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+}
+
+.button {
+    background: white;
+    color: black;
+}
+
+.button-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+.about {
+    padding: 100px 10%;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
