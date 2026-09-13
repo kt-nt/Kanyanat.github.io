@@ -1,689 +1,101 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Kanyanat Tonok | Portfolio</title>
 
-    <style>
-
-        /* ============================= */
-        /* RESET */
-        /* ============================= */
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: "Kanit", sans-serif;
-            background: #faf8ff;
-            color: #40384f;
-            line-height: 1.7;
-        }
-
-        /* ============================= */
-        /* COLORS */
-        /* ============================= */
-
-        :root {
-            --lavender-main: #cbb8f5;
-            --lavender-light: #eee7ff;
-            --lavender-soft: #f7f3ff;
-            --lavender-dark: #8c70c7;
-
-            --purple-dark: #4d3c70;
-            --purple-medium: #7258a5;
-
-            --white: #ffffff;
-            --text-main: #40384f;
-            --text-soft: #7e738d;
-        }
-
-        /* ============================= */
-        /* NAVBAR */
-        /* ============================= */
-
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: 75px;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            padding: 0 8%;
-
-            background: rgba(255,255,255,0.78);
-            backdrop-filter: blur(18px);
-
-            border-bottom: 1px solid rgba(140,112,199,0.12);
-
-            z-index: 1000;
-        }
-
-        .logo {
-            font-family: "Poppins", sans-serif;
-            font-size: 20px;
-            font-weight: 700;
-            color: var(--purple-dark);
-            letter-spacing: 2px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-main);
-            font-size: 15px;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--lavender-dark);
-        }
-
-        /* ============================= */
-        /* HERO */
-        /* ============================= */
-
-        .hero {
-            min-height: 100vh;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            padding: 120px 10% 60px;
-
-            background:
-                radial-gradient(circle at 10% 20%, #eee6ff 0%, transparent 35%),
-                radial-gradient(circle at 90% 80%, #e9ddff 0%, transparent 35%),
-                #faf8ff;
-        }
-
-        .hero-text {
-            width: 55%;
-        }
-
-        .mini-title {
-            color: var(--lavender-dark);
-            letter-spacing: 4px;
-            font-family: "Poppins", sans-serif;
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        .hero h1 {
-            font-size: clamp(45px, 6vw, 82px);
-            line-height: 1.1;
-            margin: 15px 0 25px;
-            color: var(--purple-dark);
-        }
-
-        .hero h1 span {
-            color: var(--lavender-dark);
-        }
-
-        .hero-description {
-            max-width: 650px;
-            font-size: 18px;
-            color: var(--text-soft);
-        }
-
-        .hero-buttons {
-            margin-top: 35px;
-
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .button {
-            display: inline-block;
-
-            padding: 13px 27px;
-
-            background: var(--lavender-dark);
-            color: white;
-
-            border-radius: 40px;
-
-            text-decoration: none;
-
-            transition: 0.3s;
-        }
-
-        .button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(140,112,199,0.3);
-        }
-
-        .button-outline {
-            background: transparent;
-            border: 1px solid var(--lavender-dark);
-            color: var(--lavender-dark);
-        }
-
-        /* HERO CARD */
-
-        .hero-card {
-            width: 340px;
-            height: 420px;
-
-            background: linear-gradient(
-                145deg,
-                #ffffff,
-                #eee6ff
-            );
-
-            border-radius: 40px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            box-shadow:
-                0 30px 60px rgba(102,74,150,0.18);
-
-            position: relative;
-        }
-
-        .hero-card-inner {
-            width: 270px;
-            height: 350px;
-
-            border-radius: 30px;
-
-            background: var(--lavender-light);
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            text-align: center;
-        }
-
-        .profile-circle {
-            width: 150px;
-            height: 150px;
-
-            border-radius: 50%;
-
-            background: white;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            font-size: 60px;
-
-            margin-bottom: 20px;
-
-            box-shadow: 0 15px 30px rgba(120,90,170,.15);
-        }
-
-        .hero-card h3 {
-            color: var(--purple-dark);
-        }
-
-        .hero-card p {
-            font-size: 14px;
-            color: var(--text-soft);
-        }
-
-        /* ============================= */
-        /* GENERAL SECTION */
-        /* ============================= */
-
-        section {
-            padding: 110px 10%;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 65px;
-        }
-
-        .section-title p {
-            font-family: "Poppins", sans-serif;
-            color: var(--lavender-dark);
-            letter-spacing: 4px;
-            font-size: 12px;
-        }
-
-        .section-title h2 {
-            font-size: 40px;
-            color: var(--purple-dark);
-            margin-top: 7px;
-        }
-
-        /* ============================= */
-        /* ABOUT */
-        /* ============================= */
-
-        .about {
-            background: white;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        .about-card {
-            background: var(--lavender-soft);
-
-            border-radius: 25px;
-
-            padding: 35px;
-
-            transition: 0.3s;
-        }
-
-        .about-card:hover {
-            transform: translateY(-7px);
-            box-shadow: 0 20px 40px rgba(110,80,160,.12);
-        }
-
-        .about-icon {
-            font-size: 35px;
-            margin-bottom: 15px;
-        }
-
-        .about-card h3 {
-            color: var(--purple-dark);
-            margin-bottom: 10px;
-        }
-
-        .about-card p {
-            color: var(--text-soft);
-        }
-
-        /* ============================= */
-        /* EDUCATION */
-        /* ============================= */
-
-        .education-box {
-            max-width: 900px;
-
-            margin: auto;
-
-            padding: 45px;
-
-            background: white;
-
-            border-radius: 30px;
-
-            box-shadow: 0 20px 45px rgba(112,85,165,0.1);
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 35px;
-        }
-
-        .education-text h3 {
-            color: var(--purple-dark);
-            font-size: 25px;
-        }
-
-        .education-text p {
-            color: var(--text-soft);
-            margin-top: 5px;
-        }
-
-        .gpa {
-            min-width: 150px;
-            height: 150px;
-
-            border-radius: 50%;
-
-            background: var(--lavender-light);
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .gpa strong {
-            color: var(--lavender-dark);
-            font-size: 40px;
-        }
-
-        .gpa span {
-            color: var(--text-soft);
-        }
-
-        /* ============================= */
-        /* INTEREST */
-        /* ============================= */
-
-        .interest {
-            background: white;
-        }
-
-        .interest-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .interest-card {
-            padding: 30px;
-
-            border: 1px solid #eee6fa;
-
-            border-radius: 22px;
-
-            text-align: center;
-
-            transition: 0.3s;
-        }
-
-        .interest-card:hover {
-            background: var(--lavender-soft);
-            transform: translateY(-5px);
-        }
-
-        .interest-card .icon {
-            font-size: 38px;
-        }
-
-        .interest-card h3 {
-            margin-top: 12px;
-            color: var(--purple-dark);
-        }
-
-        /* ============================= */
-        /* SKILLS */
-        /* ============================= */
-
-        .skills-container {
-            max-width: 850px;
-            margin: auto;
-        }
-
-        .skill {
-            margin-bottom: 25px;
-        }
-
-        .skill-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 8px;
-        }
-
-        .skill-bar {
-            width: 100%;
-            height: 9px;
-            background: #ece5f7;
-            border-radius: 20px;
-            overflow: hidden;
-        }
-
-        .skill-progress {
-            height: 100%;
-            background: linear-gradient(
-                90deg,
-                #cdbbf3,
-                #9274cf
-            );
-
-            border-radius: 20px;
-        }
-
-        /* ============================= */
-        /* FUTURE */
-        /* ============================= */
-
-        .future {
-            background:
-                linear-gradient(
-                    145deg,
-                    #efe8ff,
-                    #faf8ff
-                );
-        }
-
-        .future-box {
-            max-width: 850px;
-            margin: auto;
-
-            background: white;
-
-            border-radius: 30px;
-
-            padding: 50px;
-
-            text-align: center;
-
-            box-shadow: 0 20px 50px rgba(108,80,150,.12);
-        }
-
-        .future-icon {
-            font-size: 65px;
-        }
-
-        .future-box h3 {
-            font-size: 30px;
-            color: var(--purple-dark);
-            margin: 20px;
-        }
-
-        .future-box p {
-            color: var(--text-soft);
-            max-width: 650px;
-            margin: auto;
-        }
-
-        /* ============================= */
-        /* PORTFOLIO */
-        /* ============================= */
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 25px;
-        }
-
-        .portfolio-card {
-            height: 280px;
-
-            background: var(--lavender-light);
-
-            border-radius: 25px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            flex-direction: column;
-
-            transition: .3s;
-
-            cursor: pointer;
-        }
-
-        .portfolio-card:hover {
-            transform: translateY(-7px);
-            background: #e7dcff;
-        }
-
-        .portfolio-card span {
-            font-size: 50px;
-        }
-
-        .portfolio-card h3 {
-            color: var(--purple-dark);
-            margin-top: 15px;
-        }
-
-        .portfolio-card p {
-            color: var(--text-soft);
-        }
-
-        /* ============================= */
-        /* QUOTE */
-        /* ============================= */
-
-        .quote {
-            text-align: center;
-            background: var(--purple-dark);
-            color: white;
-        }
-
-        .quote h2 {
-            font-family: "Poppins", sans-serif;
-            font-size: clamp(30px,4vw,50px);
-            max-width: 850px;
-            margin: auto;
-        }
-
-        .quote p {
-            margin-top: 20px;
-            color: #ddd1f1;
-        }
-
-        /* ============================= */
-        /* FOOTER */
-        /* ============================= */
-
-        footer {
-            padding: 45px 10%;
-
-            text-align: center;
-
-            background: #382c50;
-
-            color: #cfc2e2;
-        }
-
-        /* ============================= */
-        /* MOBILE */
-        /* ============================= */
-
-        @media(max-width: 900px) {
-
-            .hero {
-                flex-direction: column;
-                text-align: center;
-                gap: 60px;
-            }
-
-            .hero-text {
-                width: 100%;
-            }
-
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .about-grid,
-            .interest-grid,
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .education-box {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<nav class="navbar">
 
-<!-- ========================= -->
-<!-- NAVIGATION -->
-<!-- ========================= -->
+    <a href="index.html" class="logo">
+        KANYANAT<span>.</span>
+    </a>
 
-<nav>
+    <div class="nav-menu">
 
-    <div class="logo">
-        MY PORTFOLIO
+        <a class="active" href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About Me
+        </a>
+
+        <a href="portfolio.html">
+            Portfolio
+        </a>
+
+        <a href="certificates.html">
+            Certificates
+        </a>
+
+        <a href="future.html">
+            My Future
+        </a>
+
     </div>
 
-    <div class="nav-links">
-
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#future">Future</a>
-
-    </div>
+    <button class="menu-button">
+        ☰
+    </button>
 
 </nav>
 
 
-<!-- ========================= -->
-<!-- HERO -->
-<!-- ========================= -->
+<main class="page-container">
 
-<section class="hero" id="home">
+<section class="home-hero">
 
-    <div class="hero-text">
+    <div class="home-copy">
 
-        <p class="mini-title">
+        <div class="eyebrow">
             WELCOME TO MY PORTFOLIO
-        </p>
+        </div>
 
         <h1>
-            Creating.<br>
-            Learning.<br>
-            <span>Growing.</span>
+            Hello,<br>
+            I'm <span>Kanyanat.</span>
         </h1>
 
-        <p class="hero-description">
+        <p class="intro">
 
-            นักเรียนสาย Computer Science and Engineering
-            ที่ชอบการออกแบบ การคิดคำนวณ การสร้างสรรค์
-            และการเรียนรู้สิ่งใหม่ ๆ
+            ยินดีต้อนรับเข้าสู่พื้นที่เล็ก ๆ
+            ที่รวบรวมเรื่องราว ความสนใจ
+            ผลงาน และสิ่งที่ฉันกำลังเรียนรู้
 
             <br><br>
 
-            ผมเชื่อว่าการออกจาก Comfort Zone
-            และลองทำสิ่งที่ท้าทาย
-            เป็นหนึ่งในวิธีที่ดีที่สุดในการพัฒนาตัวเอง
+            ฉันชอบการสร้างสรรค์
+            การออกแบบ การคิดคำนวณ
+            และความท้าทายใหม่ ๆ
+            ที่ทำให้ฉันได้ก้าวออกจากพื้นที่เดิมของตัวเอง
 
         </p>
 
 
         <div class="hero-buttons">
 
-            <a class="button" href="#about">
-                Explore My Story
+            <a href="about.html"
+               class="btn">
+
+                Get to Know Me
+
             </a>
 
-            <a class="button button-outline" href="#portfolio">
-                View Portfolio
+            <a href="portfolio.html"
+               class="btn btn-outline">
+
+                View My Work
+
             </a>
 
         </div>
@@ -691,27 +103,43 @@
     </div>
 
 
-    <div class="hero-card">
+    <div class="hero-photo-wrap">
 
-        <div class="hero-card-inner">
+        <!--
+        หากมีรูปแล้ว ให้ลบ div photo-placeholder
+        แล้วใช้บรรทัดนี้แทน
 
-            <!--
-            เปลี่ยน Emoji นี้เป็นรูปของตัวเองได้ภายหลัง
-            -->
+        <img
+            class="hero-photo"
+            src="assets/images/home-photo.jpg"
+            alt="Kanyanat Tonok">
+        -->
 
-            <div class="profile-circle">
-                ✨
-            </div>
 
-            <h3>
-                Computer Science
-                <br>
-                & Engineering
-            </h3>
+        <div class="photo-placeholder">
+
+            <span>♡</span>
+
+            <strong>
+                YOUR PHOTO
+            </strong>
 
             <p>
-                Student Portfolio
+                assets/images/home-photo.jpg
             </p>
+
+        </div>
+
+
+        <div class="floating-card">
+
+            <strong>
+                GPA 3.96
+            </strong>
+
+            <span>
+                CSE Student
+            </span>
 
         </div>
 
@@ -721,264 +149,75 @@
 
 
 
-<!-- ========================= -->
-<!-- ABOUT -->
-<!-- ========================= -->
+<section class="home-mini-about">
 
-<section class="about" id="about">
+    <div class="section-heading center">
 
-    <div class="section-title">
-
-        <p>GET TO KNOW ME</p>
+        <div class="eyebrow">
+            A LITTLE ABOUT ME
+        </div>
 
         <h2>
-            About Me
+            Things I Love
         </h2>
 
     </div>
 
 
-    <div class="about-grid">
+    <div class="mini-about-grid">
 
-        <div class="about-card">
 
-            <div class="about-icon">
+        <div class="mini-card">
+
+            <div class="icon">
                 🎨
             </div>
 
             <h3>
-                Creative
+                Create
             </h3>
 
             <p>
-                ชอบวาดรูป ออกแบบ
-                และสร้างสิ่งต่าง ๆ
-                จากไอเดียของตัวเอง
+                ฉันชอบวาดรูป
+                ออกแบบ และสร้างสิ่งต่าง ๆ
+                จากความคิดของตัวเอง
             </p>
 
         </div>
 
 
-        <div class="about-card">
+        <div class="mini-card">
 
-            <div class="about-icon">
+            <div class="icon">
                 🧠
             </div>
 
             <h3>
-                Think & Solve
+                Think
             </h3>
 
             <p>
-                ชอบคิดคำนวณ วิเคราะห์ปัญหา
-                และค้นหาวิธีแก้ปัญหา
-                ในรูปแบบของตัวเอง
+                สนุกกับการคิดคำนวณ
+                วิเคราะห์ และแก้ปัญหา
             </p>
 
         </div>
 
 
-        <div class="about-card">
+        <div class="mini-card">
 
-            <div class="about-icon">
-                🚀
+            <div class="icon">
+                ✦
             </div>
 
             <h3>
-                Challenge
+                Explore
             </h3>
 
             <p>
-                ชอบทำสิ่งที่ท้าทาย
+                ชอบเรียนรู้สิ่งใหม่
+                และสิ่งที่ท้าทาย
                 ทั้งความสามารถและความกลัว
-                เพราะเชื่อว่าทุกความท้าทาย
-                คือโอกาสในการพัฒนา
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ========================= -->
-<!-- EDUCATION -->
-<!-- ========================= -->
-
-<section id="education">
-
-    <div class="section-title">
-
-        <p>MY EDUCATION</p>
-
-        <h2>
-            Education
-        </h2>
-
-    </div>
-
-
-    <div class="education-box">
-
-        <div class="education-text">
-
-            <h3>
-                โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”
-            </h3>
-
-            <p>
-                ห้องเรียน CSE
-                (Computer Science and Engineering)
-            </p>
-
-            <p>
-                หรือห้องเรียนวิทยาศาสตร์คอมพิวเตอร์
-            </p>
-
-        </div>
-
-
-        <div class="gpa">
-
-            <strong>
-                3.96
-            </strong>
-
-            <span>
-                GPA
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- ========================= -->
-<!-- INTEREST -->
-<!-- ========================= -->
-
-<section class="interest">
-
-    <div class="section-title">
-
-        <p>THINGS I LOVE</p>
-
-        <h2>
-            My Interests
-        </h2>
-
-    </div>
-
-
-    <div class="interest-grid">
-
-
-        <div class="interest-card">
-
-            <div class="icon">
-                🎨
-            </div>
-
-            <h3>
-                Drawing
-            </h3>
-
-            <p>
-                วาดรูปและสร้างสรรค์งานศิลปะ
-            </p>
-
-        </div>
-
-
-        <div class="interest-card">
-
-            <div class="icon">
-                🧊
-            </div>
-
-            <h3>
-                3D Design
-            </h3>
-
-            <p>
-                ออกแบบโมเดลและสิ่งของในรูปแบบ 3 มิติ
-            </p>
-
-        </div>
-
-
-        <div class="interest-card">
-
-            <div class="icon">
-                🧮
-            </div>
-
-            <h3>
-                Mathematics
-            </h3>
-
-            <p>
-                สนุกกับการคิดคำนวณและแก้โจทย์
-            </p>
-
-        </div>
-
-
-        <div class="interest-card">
-
-            <div class="icon">
-                🎮
-            </div>
-
-            <h3>
-                Gaming
-            </h3>
-
-            <p>
-                เล่นเกมเพื่อความสนุก
-                การคิดวางแผน
-                และพบกับความท้าทายใหม่ ๆ
-            </p>
-
-        </div>
-
-
-        <div class="interest-card">
-
-            <div class="icon">
-                💡
-            </div>
-
-            <h3>
-                Learning
-            </h3>
-
-            <p>
-                สนุกกับการเรียนรู้เรื่องใหม่
-                และทดลองสิ่งที่ไม่เคยทำ
-            </p>
-
-        </div>
-
-
-        <div class="interest-card">
-
-            <div class="icon">
-                🕊️
-            </div>
-
-            <h3>
-                Freedom
-            </h3>
-
-            <p>
-                ชอบการเรียนรู้และการทำงาน
-                ที่เปิดโอกาสให้คิดอย่างอิสระ
             </p>
 
         </div>
@@ -990,299 +229,37 @@
 
 
 
-<!-- ========================= -->
-<!-- SKILLS -->
-<!-- ========================= -->
-
-<section id="skills">
-
-    <div class="section-title">
-
-        <p>WHAT I CAN DO</p>
-
-        <h2>
-            Skills
-        </h2>
-
-    </div>
-
-
-    <div class="skills-container">
-
-
-        <div class="skill">
-
-            <div class="skill-header">
-                <span>Drawing</span>
-                <span>Creative Skill</span>
-            </div>
-
-            <div class="skill-bar">
-
-                <div class="skill-progress"
-                     style="width: 90%;">
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="skill">
-
-            <div class="skill-header">
-                <span>Mathematics & Calculation</span>
-                <span>Analytical Skill</span>
-            </div>
-
-            <div class="skill-bar">
-
-                <div class="skill-progress"
-                     style="width: 88%;">
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="skill">
-
-            <div class="skill-header">
-                <span>3D Design</span>
-                <span>Design Skill</span>
-            </div>
-
-            <div class="skill-bar">
-
-                <div class="skill-progress"
-                     style="width: 80%;">
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="skill">
-
-            <div class="skill-header">
-                <span>Creative Thinking</span>
-                <span>Problem Solving</span>
-            </div>
-
-            <div class="skill-bar">
-
-                <div class="skill-progress"
-                     style="width: 90%;">
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="skill">
-
-            <div class="skill-header">
-                <span>English Communication</span>
-                <span>Learning</span>
-            </div>
-
-            <div class="skill-bar">
-
-                <div class="skill-progress"
-                     style="width: 45%;">
-                </div>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- ========================= -->
-<!-- PORTFOLIO -->
-<!-- ========================= -->
-
-<section class="interest" id="portfolio">
-
-    <div class="section-title">
-
-        <p>MY JOURNEY</p>
-
-        <h2>
-            Portfolio
-        </h2>
-
-    </div>
-
-
-    <div class="portfolio-grid">
-
-
-        <div class="portfolio-card">
-
-            <span>
-                🏆
-            </span>
-
-            <h3>
-                Achievements
-            </h3>
-
-            <p>
-                รางวัลและการแข่งขัน
-            </p>
-
-        </div>
-
-
-
-        <div class="portfolio-card">
-
-            <span>
-                🛠️
-            </span>
-
-            <h3>
-                Projects
-            </h3>
-
-            <p>
-                ผลงานและโปรเจกต์
-            </p>
-
-        </div>
-
-
-
-        <div class="portfolio-card">
-
-            <span>
-                📜
-            </span>
-
-            <h3>
-                Certificates
-            </h3>
-
-            <p>
-                เกียรติบัตรและการอบรม
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- ========================= -->
-<!-- FUTURE -->
-<!-- ========================= -->
-
-<section class="future" id="future">
-
-    <div class="section-title">
-
-        <p>LOOKING FORWARD</p>
-
-        <h2>
-            My Future
-        </h2>
-
-    </div>
-
-
-    <div class="future-box">
-
-        <div class="future-icon">
-            🦷
-        </div>
-
-        <h3>
-            Dentistry
-        </h3>
-
-        <p>
-
-            ในอนาคตผมต้องการเดินบนเส้นทางอาชีพ
-            ที่เปิดโอกาสให้ได้ใช้ทั้งความรู้
-            ความคิดสร้างสรรค์
-            ความละเอียดรอบคอบ
-            และการแก้ปัญหา
-
-            <br><br>
-
-            ปัจจุบันหนึ่งในเส้นทางที่ผมสนใจเป็นพิเศษคือ
-            <strong>ทันตแพทยศาสตร์</strong>
-
-            เพราะเป็นสาขาที่ผสมผสานทั้งวิทยาศาสตร์
-            ทักษะการใช้มือ ความละเอียด
-            การออกแบบ และการดูแลผู้คนเข้าด้วยกัน
-
-            <br><br>
-
-            อย่างไรก็ตาม
-            ผมยังเปิดกว้างต่อการเรียนรู้สิ่งใหม่
-            และพร้อมค้นหาโอกาสที่เหมาะสมกับตัวเอง
-            ในอนาคต
-
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- ========================= -->
-<!-- QUOTE -->
-<!-- ========================= -->
-
-<section class="quote">
+<section class="quote-section">
 
     <h2>
-        “I want the freedom to explore,
-        create and challenge myself.”
+        “Freedom to explore,
+        courage to challenge,
+        and creativity to create.”
     </h2>
 
     <p>
-        Keep learning. Keep creating. Keep growing.
+        My journey is still being written.
     </p>
 
 </section>
 
+</main>
 
-
-<!-- ========================= -->
-<!-- FOOTER -->
-<!-- ========================= -->
 
 <footer>
 
-    <p>
-        © 2026 My Portfolio
-    </p>
+    <strong>
+        Kanyanat Tonok
+    </strong>
 
-    <p>
-        Designed with 💜 & Lavender
-    </p>
+    <br>
+
+    Personal Portfolio • 2026
 
 </footer>
 
+
+<script src="script.js"></script>
 
 </body>
 </html>
