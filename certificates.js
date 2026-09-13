@@ -1,25 +1,41 @@
+/* =========================================================
+   KANYANAT TONOK
+   CERTIFICATES DATABASE
+========================================================= */
+
+
 const certificates = [
 
-    // =========================================
-    // DENTISTRY
-    // =========================================
+
+    /* =====================================================
+       DENTISTRY
+    ===================================================== */
 
     {
-        title: "กิจกรรมแนะแนวการศึกษาและอาชีพด้านทันตกรรม",
-        organization: "คลินิกทันตกรรมเอสซี สาขาบ้านบึง จังหวัดชลบุรี",
-        date: "27 มีนาคม 2569",
-        category: "dentistry",
+        title:
+            "กิจกรรมแนะแนวการศึกษาและอาชีพด้านทันตกรรม",
+
+        organization:
+            "คลินิกทันตกรรมเอสซี สาขาบ้านบึง จังหวัดชลบุรี",
+
+        date:
+            "27 มีนาคม 2569",
+
+        category:
+            "dentistry",
 
         image:
-            "assets/certificates/images/dentistry-guidance-2569.jpg",
+            "./assets/certificates/images/dentistry-guidance-2569.jpg.jpg",
 
-        pdf: null
+        pdf:
+            null
     },
 
 
-    // =========================================
-    // TECHNOLOGY
-    // =========================================
+
+    /* =====================================================
+       TECHNOLOGY
+    ===================================================== */
 
     {
         title:
@@ -28,14 +44,17 @@ const certificates = [
         organization:
             "คณะวิศวกรรมศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
 
-        date: "5 กรกฎาคม 2569",
+        date:
+            "5 กรกฎาคม 2569",
 
-        category: "technology",
+        category:
+            "technology",
 
         image:
-            "assets/certificates/images/kmitl-ai-cyber-2569.png",
+            "./assets/certificates/images/kmitl-ai-cyber-2569.png.png",
 
-        pdf: null
+        pdf:
+            null
     },
 
 
@@ -46,14 +65,17 @@ const certificates = [
         organization:
             "คณะวิศวกรรมศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
 
-        date: "5 กรกฎาคม 2569",
+        date:
+            "5 กรกฎาคม 2569",
 
-        category: "technology",
+        category:
+            "technology",
 
         image:
-            "assets/certificates/images/kmitl-plc-2569.png",
+            "./assets/certificates/images/kmitl-plc-2569.png.png",
 
-        pdf: null
+        pdf:
+            null
     },
 
 
@@ -64,14 +86,17 @@ const certificates = [
         organization:
             "EEC Automation Park, Burapha University",
 
-        date: "25 January 2025",
+        date:
+            "25 January 2025",
 
-        category: "technology",
+        category:
+            "technology",
 
         image:
-            "assets/certificates/images/automation-park-robot-2025.jpg",
+            "./assets/certificates/images/automation-park-robot-2025.jpg.jpg",
 
-        pdf: null
+        pdf:
+            null
     },
 
 
@@ -82,20 +107,24 @@ const certificates = [
         organization:
             "โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”",
 
-        date: "20 สิงหาคม 2569",
+        date:
+            "20 สิงหาคม 2569",
 
-        category: "technology",
+        category:
+            "technology",
 
         image:
-            "assets/certificates/images/smart-safe-digital-2569.jpg",
+            "./assets/certificates/images/smart-safe-digital-2569.jpg.jpg",
 
-        pdf: null
+        pdf:
+            null
     },
 
 
-    // =========================================
-    // COMPETITION
-    // =========================================
+
+    /* =====================================================
+       COMPETITION
+    ===================================================== */
 
     {
         title:
@@ -104,14 +133,17 @@ const certificates = [
         organization:
             "โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”",
 
-        date: "24 กรกฎาคม 2569",
+        date:
+            "24 กรกฎาคม 2569",
 
-        category: "competition",
+        category:
+            "competition",
 
         image:
-            "assets/certificates/images/ai-poetry-2569.jpg",
+            "./assets/certificates/images/ai-poetry-2569.png.jpg",
 
-        pdf: null
+        pdf:
+            null
     },
 
 
@@ -122,20 +154,24 @@ const certificates = [
         organization:
             "โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”",
 
-        date: "13 กรกฎาคม 2569",
+        date:
+            "13 กรกฎาคม 2569",
 
-        category: "competition",
+        category:
+            "competition",
 
         image:
-            "assets/certificates/images/fast-calculation-2569.png",
+            "./assets/certificates/images/fast-calculation-2569.jpg.png",
 
-        pdf: null
+        pdf:
+            null
     },
 
 
-    // =========================================
-    // ACADEMIC
-    // =========================================
+
+    /* =====================================================
+       ACADEMIC
+    ===================================================== */
 
     {
         title:
@@ -144,14 +180,17 @@ const certificates = [
         organization:
             "โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”",
 
-        date: "13 กรกฎาคม 2569",
+        date:
+            "13 กรกฎาคม 2569",
 
-        category: "academic",
+        category:
+            "academic",
 
         image:
-            "assets/certificates/images/sudoku-2569.jpg",
+            "./assets/certificates/images/sudoku-2569.jpg.jpg",
 
-        pdf: null
+        pdf:
+            null
     },
 
 
@@ -162,20 +201,24 @@ const certificates = [
         organization:
             "สำนักงานคณะกรรมการป้องกันและปราบปรามการทุจริตแห่งชาติ",
 
-        date: "21 กรกฎาคม 2568",
+        date:
+            "21 กรกฎาคม 2568",
 
-        category: "academic",
+        category:
+            "academic",
 
         image:
-            "assets/certificates/images/anti-corruption-2568.jpg",
+            "./assets/certificates/images/anti-corruption-2568.jpg.jpg",
 
-        pdf: null
+        pdf:
+            null
     },
 
 
-    // =========================================
-    // TRAINING
-    // =========================================
+
+    /* =====================================================
+       TRAINING
+    ===================================================== */
 
     {
         title:
@@ -184,30 +227,46 @@ const certificates = [
         organization:
             "NCSA • กรมสุขภาพจิต • KMUTT • AIS",
 
-        date: "30 ตุลาคม 2568",
+        date:
+            "30 ตุลาคม 2568",
 
-        category: "training",
+        category:
+            "training",
 
         image:
-            "assets/certificates/images/cyber-citizen-2568.jpg",
+            "./assets/certificates/images/cyber-citizen-2568.jpg.jpg",
 
-        pdf: null
+        pdf:
+            null
     }
 
 ];
 
 
-// ==================================================
-// CREATE CERTIFICATE CARDS
-// ==================================================
+
+/* =========================================================
+   GET CERTIFICATE GRID
+========================================================= */
 
 const certificateGrid =
     document.getElementById("certificateGrid");
 
 
+
+/* =========================================================
+   RENDER CERTIFICATES
+========================================================= */
+
 function renderCertificates(filter = "all") {
 
+
+    if (!certificateGrid) {
+        return;
+    }
+
+
     certificateGrid.innerHTML = "";
+
 
     const filteredCertificates =
         certificates.filter(cert => {
@@ -220,15 +279,25 @@ function renderCertificates(filter = "all") {
         });
 
 
+
     filteredCertificates.forEach(cert => {
+
 
         const card =
             document.createElement("article");
 
-        card.className = "certificate-card";
 
+        card.className =
+            "certificate-card";
+
+
+
+        /* ================================================
+           PDF BUTTON
+        ================================================= */
 
         let pdfButton = "";
+
 
         if (cert.pdf) {
 
@@ -237,7 +306,8 @@ function renderCertificates(filter = "all") {
                 <a
                     class="cert-button"
                     href="${cert.pdf}"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
 
                     📄 View PDF
 
@@ -248,58 +318,86 @@ function renderCertificates(filter = "all") {
         }
 
 
+
+        /* ================================================
+           CERTIFICATE CARD
+        ================================================= */
+
         card.innerHTML = `
+
 
             <a
                 href="${cert.image}"
-                target="_blank">
+                target="_blank"
+                rel="noopener noreferrer">
 
                 <img
                     src="${cert.image}"
                     class="certificate-image"
-                    alt="${cert.title}">
+                    alt="${cert.title}"
+                    loading="lazy">
 
             </a>
 
 
+
             <div class="certificate-info">
 
+
                 <span class="cert-category">
+
                     ${cert.category}
+
                 </span>
 
 
+
                 <h3>
+
                     ${cert.title}
+
                 </h3>
 
 
+
                 <p>
+
                     ${cert.organization}
+
                 </p>
 
 
+
                 <div class="cert-date">
+
                     ${cert.date}
+
                 </div>
+
 
 
                 <div class="cert-buttons">
 
+
                     <a
                         class="cert-button"
                         href="${cert.image}"
-                        target="_blank">
+                        target="_blank"
+                        rel="noopener noreferrer">
 
                         🔍 View Certificate
 
                     </a>
 
+
                     ${pdfButton}
+
 
                 </div>
 
+
             </div>
+
 
         `;
 
@@ -311,14 +409,18 @@ function renderCertificates(filter = "all") {
 }
 
 
-// ครั้งแรกแสดงทั้งหมด
 
-renderCertificates();
+/* =========================================================
+   INITIAL DISPLAY
+========================================================= */
+
+renderCertificates("all");
 
 
-// ==================================================
-// FILTER
-// ==================================================
+
+/* =========================================================
+   FILTER BUTTONS
+========================================================= */
 
 const filterButtons =
     document.querySelectorAll(".filter-btn");
@@ -326,7 +428,11 @@ const filterButtons =
 
 filterButtons.forEach(button => {
 
+
     button.addEventListener("click", () => {
+
+
+        /* REMOVE ACTIVE */
 
         filterButtons.forEach(btn => {
 
@@ -335,14 +441,21 @@ filterButtons.forEach(button => {
         });
 
 
+        /* ACTIVE CURRENT BUTTON */
+
         button.classList.add("active");
 
+
+        /* GET CATEGORY */
 
         const filter =
             button.dataset.filter;
 
 
+        /* DISPLAY */
+
         renderCertificates(filter);
+
 
     });
 
