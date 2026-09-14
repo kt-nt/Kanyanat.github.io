@@ -1,7 +1,3 @@
-/* =========================================================
-   MOBILE MENU
-========================================================= */
-
 const menuButton =
     document.querySelector(".menu-button");
 
@@ -37,10 +33,7 @@ if (menuButton && navMenu) {
 
 
 /* =========================================================
-   AUTOMATIC AGE CALCULATOR
-
-   Birthday:
-   22 October 2009
+   AUTO AGE
 ========================================================= */
 
 function calculateAge() {
@@ -70,9 +63,7 @@ function calculateAge() {
         (
             monthDifference === 0
             &&
-            today.getDate()
-            <
-            birthday.getDate()
+            today.getDate() < birthday.getDate()
         )
     ) {
 
