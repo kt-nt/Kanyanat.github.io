@@ -1,8 +1,3 @@
-/* =========================================================
-   KANYANAT TONOK
-   CERTIFICATE DATABASE
-========================================================= */
-
 const certificates = [
 
     {
@@ -217,12 +212,10 @@ const certificates = [
 ];
 
 
-/* =========================================================
-   CERTIFICATE GRID
-========================================================= */
 
 const certificateGrid =
     document.getElementById("certificateGrid");
+
 
 
 function renderCertificates(filter = "all") {
@@ -231,6 +224,7 @@ function renderCertificates(filter = "all") {
         return;
     }
 
+
     certificateGrid.innerHTML = "";
 
 
@@ -238,18 +232,20 @@ function renderCertificates(filter = "all") {
         certificates.filter(cert => {
 
             return (
-                filter === "all"
-                ||
+                filter === "all" ||
                 cert.category === filter
             );
 
         });
 
 
+
     filteredCertificates.forEach(cert => {
+
 
         const card =
             document.createElement("article");
+
 
         card.className =
             "certificate-card";
@@ -277,12 +273,14 @@ function renderCertificates(filter = "all") {
         }
 
 
+
         card.innerHTML = `
 
             <a
                 href="${cert.image}"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+                class="certificate-image-link">
 
                 <img
                     src="${cert.image}"
@@ -295,23 +293,29 @@ function renderCertificates(filter = "all") {
 
             <div class="certificate-info">
 
+
                 <span class="cert-category">
                     ${cert.category}
                 </span>
+
 
                 <h3>
                     ${cert.title}
                 </h3>
 
+
                 <p>
                     ${cert.organization}
                 </p>
+
 
                 <div class="cert-date">
                     ${cert.date}
                 </div>
 
+
                 <div class="cert-buttons">
+
 
                     <a
                         class="cert-button"
@@ -323,9 +327,12 @@ function renderCertificates(filter = "all") {
 
                     </a>
 
+
                     ${pdfButton}
 
+
                 </div>
+
 
             </div>
 
@@ -339,29 +346,34 @@ function renderCertificates(filter = "all") {
 }
 
 
+
 renderCertificates("all");
 
 
-/* =========================================================
-   FILTER BUTTONS
-========================================================= */
 
 const filterButtons =
     document.querySelectorAll(".filter-btn");
+
 
 
 filterButtons.forEach(button => {
 
     button.addEventListener("click", () => {
 
+
         filterButtons.forEach(btn => {
+
             btn.classList.remove("active");
+
         });
+
 
         button.classList.add("active");
 
+
         const filter =
             button.dataset.filter;
+
 
         renderCertificates(filter);
 
