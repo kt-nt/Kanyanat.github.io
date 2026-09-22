@@ -5,11 +5,12 @@ const portfolioItems = [
         organization: "คลินิกทันตกรรมเอสซี สาขาบ้านบึง จังหวัดชลบุรี",
         date: "27 มีนาคม 2569",
         category: "dentistry",
-        description: "เรียนรู้บรรยากาศการทำงานจริงภายในคลินิกทันตกรรม รวมถึงขั้นตอนและอุปกรณ์พื้นฐานที่เกี่ยวข้องกับงานด้านทันตกรรม",
+        description: "เรียนรู้บรรยากาศการทำงานจริงภายในคลินิกทันตกรรม รวมถึงการทดลองและการสังเกตการทำงานภายในคลินิก",
         activityImages: [
             "./assets/activities/images/คลีนิคSC.jpg",
             "./assets/activities/images/คลีนิคSC1.jpg",
-            "./assets/activities/images/พิมพ์ฟัน.jpg"
+            "./assets/activities/images/พิมพ์ฟัน.jpg",
+            "./assets/activities/images/คู่.jpg"
         ],
         certificate: "./assets/certificates/images/dentistry-guidance-2569.jpg",
         pdf: null
@@ -21,37 +22,20 @@ const portfolioItems = [
         date: "25 January 2025",
         category: "technology",
         description: "กิจกรรมภาคปฏิบัติด้านหุ่นยนต์ การประกอบวงจร และการทำงานร่วมกันเป็นทีม",
-        activityImages: [
-            "./assets/activities/images/แข่งคู่.jpg",
-            "./assets/activities/images/คู่.jpg"
-        ],
+        activityImages: [],
         certificate: "./assets/certificates/images/automation-park-robot-2025.jpg",
         pdf: null
     },
 
     {
-        title: "อบรมเทคโนโลยีอินเทอร์เน็ตอุตสาหกรรมและการประยุกต์ใช้งาน",
+        title: "เทคโนโลยีอินเตอร์เน็ตทุกสรรพสิ่งและการประยุกต์ใช้งาน",
         organization: "กิจกรรมอบรมและปฏิบัติการด้านเทคโนโลยี",
         date: "2569",
         category: "technology",
-        description: "เรียนรู้การประยุกต์ใช้งานเทคโนโลยี IoT และอิเล็กทรอนิกส์ ผ่านกิจกรรมทดลองและการทำงานร่วมกัน",
-        activityImages: [
-            "./assets/activities/images/แอค.jpg",
-            "./assets/activities/images/somethink.jpg"
-        ],
-        certificate: null,
-        pdf: null
-    },
-
-    {
-        title: "Automation Camp 2025",
-        organization: "CEITA • Faculty of Engineering • KMUTNB Prachinburi Campus",
-        date: "13–14 December 2025",
-        category: "technology",
-        description: "เข้าร่วมกิจกรรมค่ายด้านระบบอัตโนมัติและรับประสบการณ์ด้านเทคโนโลยีวิศวกรรมจากการลงมือปฏิบัติจริง",
+        description: "เรียนรู้และทดลองการประยุกต์ใช้งานเทคโนโลยี Internet of Things (IoT) ผ่านกิจกรรมภาคปฏิบัติ",
         activityImages: [
             "./assets/activities/images/รวม.jpg",
-            "./assets/activities/images/คู่.jpg"
+            "./assets/activities/images/แอค.jpg"
         ],
         certificate: null,
         pdf: null
@@ -63,8 +47,10 @@ const portfolioItems = [
         date: "24–25 มกราคม 2569",
         category: "technology",
         description: "ผ่านการอบรมเชิงปฏิบัติการพื้นฐานการควบคุมอัตโนมัติด้วย PLC ในกิจกรรมค่ายพัฒนาความเป็นเลิศด้าน Robotic และ AI",
-        activityImages: [],
-        certificate: null,
+        activityImages: [
+            "./assets/activities/images/แข่งคู่.jpg"
+        ],
+        certificate: "./assets/certificates/images/เกียรติบัตรPLC.jpg",
         pdf: null
     },
 
@@ -99,7 +85,19 @@ const portfolioItems = [
         activityImages: [
             "./assets/activities/images/openhouse.jpg",
             "./assets/activities/images/บูธ.jpg",
-            "./assets/activities/images/บูธ1.jpg",
+            "./assets/activities/images/บูธ1.jpg"
+        ],
+        certificate: null,
+        pdf: null
+    },
+
+    {
+        title: "กิจกรรมชุมนุม — ทดลองสอนน้อง ๆ",
+        organization: "โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”",
+        date: "กิจกรรมชุมนุม",
+        category: "activity",
+        description: "ทดลองทำหน้าที่สอนและถ่ายทอดความรู้ให้น้อง ๆ ภายในกิจกรรมชุมนุม",
+        activityImages: [
             "./assets/activities/images/สอน.jpg"
         ],
         certificate: null,
@@ -112,32 +110,22 @@ const portfolioItems = [
         date: "19–23 มกราคม 2569",
         category: "competition",
         description: "ร่วมปฏิบัติหน้าที่ในฝ่ายเอกสารของศูนย์การแข่งขันกิจกรรมคอมพิวเตอร์ งานศิลปหัตถกรรมนักเรียน ครั้งที่ 73",
-        activityImages: [],
-        certificate: "./assets/activities/images/staffศิลปหัตถกรรม.jpg",
-        pdf: null
-    },
-
-    {
-        title: "กิจกรรมดรัมเมเยอร์และขบวนพาเหรด",
-        organization: "โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”",
-        date: "กิจกรรมโรงเรียน",
-        category: "activity",
-        description: "ร่วมกิจกรรมขบวนพาเหรดและดรัมเมเยอร์ เป็นประสบการณ์ด้านการแสดง ความรับผิดชอบ และการทำงานร่วมกับผู้อื่น",
         activityImages: [
-            "./assets/activities/images/ดรัมเดิน.jpg",
-            "./assets/activities/images/ดรัมเมเยอร์.jpg"
+            "./assets/activities/images/staffศิลปหัตถกรรม.jpg"
         ],
-        certificate: null,
+        certificate: "./assets/certificates/images/ครั้งที่73.jpg",
         pdf: null
     },
 
     {
-        title: "กิจกรรมสแตนด์เชียร์",
+        title: "กิจกรรมกีฬาสี",
         organization: "โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”",
         date: "กิจกรรมโรงเรียน",
         category: "activity",
-        description: "ร่วมกิจกรรมสแตนด์เชียร์และกิจกรรมของโรงเรียน เสริมสร้างการทำงานเป็นทีมและการมีส่วนร่วมกับเพื่อน ๆ",
+        description: "ร่วมกิจกรรมกีฬาสีทั้งดรัมเมเยอร์ ขบวนพาเหรด และสแตนด์เชียร์ ฝึกความรับผิดชอบ ความกล้าแสดงออก และการทำงานร่วมกันเป็นทีม",
         activityImages: [
+            "./assets/activities/images/ดรัมเมเยอร์.jpg",
+            "./assets/activities/images/ดรัมเดิน.jpg",
             "./assets/activities/images/แสตนเชียร์ ม.2.jpg"
         ],
         certificate: null,
