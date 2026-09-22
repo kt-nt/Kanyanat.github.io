@@ -51,6 +51,18 @@ const portfolioItems = [
             "./assets/activities/images/รวมPLC.jpg",
             "./assets/activities/images/แข่งคู่.jpg"
         ],
+        certificate: null,
+        pdf: null
+    },
+
+    {
+        title: "การอบรม PLC",
+        organization: "โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”",
+        date: "กิจกรรมอบรมที่โรงเรียน",
+        category: "training",
+        categoryLabel: "การอบรม",
+        description: "เข้าร่วมการอบรมเกี่ยวกับ PLC ที่จัดขึ้นภายในโรงเรียน",
+        activityImages: [],
         certificate: "./assets/certificates/images/เกียรติบัตรPLC.jpg",
         pdf: null
     },
