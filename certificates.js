@@ -48,7 +48,6 @@ const portfolioItems = [
         category: "technology",
         description: "ผ่านการอบรมเชิงปฏิบัติการพื้นฐานการควบคุมอัตโนมัติด้วย PLC ในกิจกรรมค่ายพัฒนาความเป็นเลิศด้าน Robotic และ AI",
         activityImages: [
-            "./assets/activities/images/รวมPLC.jpg",
             "./assets/activities/images/แข่งคู่.jpg"
         ],
         certificate: null,
@@ -62,7 +61,9 @@ const portfolioItems = [
         category: "training",
         categoryLabel: "การอบรม",
         description: "เข้าร่วมการอบรมเกี่ยวกับ PLC ที่จัดขึ้นภายในโรงเรียน",
-        activityImages: [],
+        activityImages: [
+            "./assets/activities/images/รวมPLC.jpg"
+        ],
         certificate: "./assets/certificates/images/เกียรติบัตรPLC.jpg",
         pdf: null
     },
