@@ -7,10 +7,9 @@ const portfolioItems = [
         category: "dentistry",
         description: "เรียนรู้บรรยากาศการทำงานจริงภายในคลินิกทันตกรรม รวมถึงขั้นตอนและอุปกรณ์พื้นฐานที่เกี่ยวข้องกับงานด้านทันตกรรม",
         activityImages: [
-            "./assets/activities/images/dentistry-01.jpg",
-            "./assets/activities/images/dentistry-02.jpg",
-            "./assets/activities/images/dentistry-03.jpg",
-            "./assets/activities/images/dentistry-04.jpg"
+            "./assets/activities/images/คลีนิคSC.jpg",
+            "./assets/activities/images/คลีนิคSC1.jpg",
+            "./assets/activities/images/พิมพ์ฟัน.jpg"
         ],
         certificate: "./assets/certificates/images/dentistry-guidance-2569.jpg",
         pdf: null
@@ -23,7 +22,8 @@ const portfolioItems = [
         category: "technology",
         description: "กิจกรรมภาคปฏิบัติด้านหุ่นยนต์ การประกอบวงจร และการทำงานร่วมกันเป็นทีม",
         activityImages: [
-            "./assets/activities/images/robot-mecanum-01.jpg"
+            "./assets/activities/images/แข่งคู่.jpg",
+            "./assets/activities/images/คู่.jpg"
         ],
         certificate: "./assets/certificates/images/automation-park-robot-2025.jpg",
         pdf: null
@@ -36,8 +36,8 @@ const portfolioItems = [
         category: "technology",
         description: "เรียนรู้การประยุกต์ใช้งานเทคโนโลยี IoT และอิเล็กทรอนิกส์ ผ่านกิจกรรมทดลองและการทำงานร่วมกัน",
         activityImages: [
-            "./assets/activities/images/industrial-iot-01.jpg",
-            "./assets/activities/images/industrial-iot-02.jpg"
+            "./assets/activities/images/แอค.jpg",
+            "./assets/activities/images/somethink.jpg"
         ],
         certificate: null,
         pdf: null
@@ -50,8 +50,8 @@ const portfolioItems = [
         category: "technology",
         description: "เข้าร่วมกิจกรรมค่ายด้านระบบอัตโนมัติและรับประสบการณ์ด้านเทคโนโลยีวิศวกรรมจากการลงมือปฏิบัติจริง",
         activityImages: [
-            "./assets/activities/images/automation-camp-01.jpg",
-            "./assets/activities/images/automation-camp-02.jpg"
+            "./assets/activities/images/รวม.jpg",
+            "./assets/activities/images/คู่.jpg"
         ],
         certificate: null,
         pdf: null
@@ -64,7 +64,7 @@ const portfolioItems = [
         category: "technology",
         description: "ผ่านการอบรมเชิงปฏิบัติการพื้นฐานการควบคุมอัตโนมัติด้วย PLC ในกิจกรรมค่ายพัฒนาความเป็นเลิศด้าน Robotic และ AI",
         activityImages: [],
-        certificate: "./assets/activities/images/plc-kmutnb-certificate.jpg",
+        certificate: null,
         pdf: null
     },
 
@@ -97,10 +97,10 @@ const portfolioItems = [
         category: "activity",
         description: "ร่วมจัดบูธ ให้คำแนะนำ และถ่ายทอดความรู้ด้านวงจรและเทคโนโลยีให้ผู้เข้าร่วมกิจกรรม",
         activityImages: [
-            "./assets/activities/images/openhouse-01.jpg",
-            "./assets/activities/images/openhouse-02.jpg",
-            "./assets/activities/images/openhouse-03.jpg",
-            "./assets/activities/images/openhouse-04.jpg"
+            "./assets/activities/images/openhouse.jpg",
+            "./assets/activities/images/บูธ.jpg",
+            "./assets/activities/images/บูธ1.jpg",
+            "./assets/activities/images/สอน.jpg"
         ],
         certificate: null,
         pdf: null
@@ -113,9 +113,9 @@ const portfolioItems = [
         category: "competition",
         description: "ร่วมปฏิบัติหน้าที่ในฝ่ายเอกสารของศูนย์การแข่งขันกิจกรรมคอมพิวเตอร์ งานศิลปหัตถกรรมนักเรียน ครั้งที่ 73",
         activityImages: [
-            "./assets/activities/images/student-arts-73-01.jpg"
+            "./assets/activities/images/staffศิลปหัตถกรรม.jpg"
         ],
-        certificate: "./assets/activities/images/student-arts-73-certificate.jpg",
+        certificate: null,
         pdf: null
     },
 
@@ -126,8 +126,8 @@ const portfolioItems = [
         category: "activity",
         description: "ร่วมกิจกรรมขบวนพาเหรดและดรัมเมเยอร์ เป็นประสบการณ์ด้านการแสดง ความรับผิดชอบ และการทำงานร่วมกับผู้อื่น",
         activityImages: [
-            "./assets/activities/images/drum-major-01.jpg",
-            "./assets/activities/images/drum-major-02.jpg"
+            "./assets/activities/images/ดรัมเดิน.jpg",
+            "./assets/activities/images/ดรัมเมเยอร์.jpg"
         ],
         certificate: null,
         pdf: null
@@ -140,7 +140,7 @@ const portfolioItems = [
         category: "activity",
         description: "ร่วมกิจกรรมสแตนด์เชียร์และกิจกรรมของโรงเรียน เสริมสร้างการทำงานเป็นทีมและการมีส่วนร่วมกับเพื่อน ๆ",
         activityImages: [
-            "./assets/activities/images/cheer-stand-01.jpg"
+            "./assets/activities/images/แสตนเชียร์ ม.2.jpg"
         ],
         certificate: null,
         pdf: null
