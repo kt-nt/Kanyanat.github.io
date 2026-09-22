@@ -112,10 +112,8 @@ const portfolioItems = [
         date: "19–23 มกราคม 2569",
         category: "competition",
         description: "ร่วมปฏิบัติหน้าที่ในฝ่ายเอกสารของศูนย์การแข่งขันกิจกรรมคอมพิวเตอร์ งานศิลปหัตถกรรมนักเรียน ครั้งที่ 73",
-        activityImages: [
-            "./assets/activities/images/staffศิลปหัตถกรรม.jpg"
-        ],
-        certificate: null,
+        activityImages: [],
+        certificate: "./assets/activities/images/staffศิลปหัตถกรรม.jpg",
         pdf: null
     },
 
