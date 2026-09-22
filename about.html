@@ -398,7 +398,6 @@
 
 <section class="talent-section">
 
-
     <div class="section-heading center">
 
         <div class="eyebrow">
@@ -406,34 +405,30 @@
         </div>
 
         <h2>
-            Special Talent
+            Drawing
         </h2>
 
         <p>
-
-            หนึ่งในสิ่งที่ฉันชอบและทำได้ดี
-            คือการวาดรูป เพราะเป็นพื้นที่ที่ทำให้ฉัน
-            สามารถถ่ายทอดความคิดและจินตนาการ
-            ออกมาได้อย่างอิสระ
-
+            การวาดรูปเป็นหนึ่งในสิ่งที่ฉันชอบมากที่สุด
+            เพราะทำให้ฉันสามารถถ่ายทอดความคิด จินตนาการ
+            และสไตล์ของตัวเองออกมาเป็นภาพ
+            ฉันสนุกกับทั้งการสเก็ตช์ตัวละคร
+            การลงสีดิจิทัล และการทดลองรูปแบบการวาดที่หลากหลาย
         </p>
 
     </div>
 
 
-
     <div class="talent-card">
-
 
         <div class="talent-image-wrapper">
 
             <img
-                src="./assets/images/drawing.png"
+                src="./assets/images/drawing/digital/1.jpg"
                 alt="Drawing artwork by Kanyanat Tonok"
                 class="talent-image">
 
         </div>
-
 
 
         <div class="talent-content">
@@ -447,36 +442,87 @@
             </div>
 
             <h3>
-                Drawing
+                My Drawing Journey
             </h3>
 
             <p>
-
-                การวาดรูปเป็นสิ่งที่ฉันชอบ
-                เพราะทำให้ฉันได้ใช้ทั้งจินตนาการ
-                ความคิดสร้างสรรค์ ความละเอียด
-                และการสังเกต
-
+                ฉันชอบวาดตัวละครและทดลองสร้างผลงาน
+                ในหลายรูปแบบ ตั้งแต่งานเส้นแบบง่าย ๆ
+                ไปจนถึงงานลงสีและออกแบบตัวละครดิจิทัล
             </p>
 
             <p>
-
-                ฉันสนุกกับการนำความคิดในหัว
-                ออกมาเป็นภาพ และชอบทดลอง
-                รูปแบบการวาดหรือแนวคิดใหม่ ๆ
-                เพื่อพัฒนาฝีมือของตัวเองอยู่เสมอ
-
+                สำหรับฉัน การวาดรูปไม่ใช่แค่การทำภาพให้สวย
+                แต่เป็นพื้นที่สำหรับฝึกสังเกต ฝึกความละเอียด
+                และถ่ายทอดสิ่งที่คิดออกมาในแบบของตัวเอง
             </p>
 
             <span class="talent-tag">
-                🎨 Drawing & Creativity
+                🎨 Drawing • Digital Art • Character Design
             </span>
 
         </div>
 
+    </div>
+
+
+    <div class="drawing-gallery-heading">
+
+        <div class="eyebrow">
+            MY ARTWORKS
+        </div>
+
+        <h3>
+            Drawing Gallery
+        </h3>
+
+        <p>
+            รวมผลงานวาดดิจิทัลของฉัน
+            คลิกที่รูปเพื่อดูภาพขนาดเต็ม
+        </p>
 
     </div>
 
+
+    <div
+        id="drawingGallery"
+        class="drawing-gallery"
+        aria-live="polite">
+    </div>
+
+
+    <div class="drawing-load-more-wrap">
+
+        <button
+            type="button"
+            id="loadMoreDrawings"
+            class="btn btn-outline drawing-load-more">
+            View More Artworks
+        </button>
+
+    </div>
+
+
+    <div
+        id="drawingModal"
+        class="drawing-modal"
+        aria-hidden="true">
+
+        <button
+            type="button"
+            id="drawingModalClose"
+            class="drawing-modal-close"
+            aria-label="Close artwork">
+            ×
+        </button>
+
+        <img
+            id="drawingModalImage"
+            class="drawing-modal-image"
+            src=""
+            alt="">
+
+    </div>
 
 </section>
 
@@ -548,6 +594,7 @@
 
 
 <script src="./script.js"></script>
+<script src="./drawings.js"></script>
 
 
 </body>
