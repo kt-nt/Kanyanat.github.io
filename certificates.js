@@ -48,6 +48,7 @@ const portfolioItems = [
         category: "technology",
         description: "ผ่านการอบรมเชิงปฏิบัติการพื้นฐานการควบคุมอัตโนมัติด้วย PLC ในกิจกรรมค่ายพัฒนาความเป็นเลิศด้าน Robotic และ AI",
         activityImages: [
+            "./assets/activities/images/รวมPLC.jpg",
             "./assets/activities/images/แข่งคู่.jpg"
         ],
         certificate: "./assets/certificates/images/เกียรติบัตรPLC.jpg",
@@ -92,10 +93,11 @@ const portfolioItems = [
     },
 
     {
-        title: "กิจกรรมชุมนุม — ทดลองสอนน้อง ๆ",
+        title: "กิจกรรมชุมนุม",
         organization: "โรงเรียนบ้านบึง “อุตสาหกรรมนุเคราะห์”",
         date: "กิจกรรมชุมนุม",
         category: "activity",
+        categoryLabel: "กิจกรรมชุมนุม",
         description: "ทดลองทำหน้าที่สอนและถ่ายทอดความรู้ให้น้อง ๆ ภายในกิจกรรมชุมนุม",
         activityImages: [
             "./assets/activities/images/สอน.jpg"
@@ -302,7 +304,7 @@ function renderPortfolioItems(filter = "all") {
 
         card.innerHTML = `
             <div class="activity-card-head">
-                <span class="cert-category">${item.category}</span>
+                <span class="cert-category">${item.categoryLabel || item.category}</span>
 
                 <h3>${item.title}</h3>
 
